@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 7px;
+}
+
+body {
+  font-family: "Open Sans", serif;
+  color: rgb(255, 243, 245);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  background-color: rgb(144, 102, 115);
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 243, 245);
+}
+p {
+  padding: 3.2rem 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  height: 46rem;
+}
+header .bg-image {
+  position: absolute;
+  background-image: url(images/image1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 46rem;
+  width: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+header h1 {
+  padding: 12rem;
+  padding-bottom: 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: rgba(144, 102, 115, 0.501);
+  border: 1px solid rgb(82, 50, 60);
+  padding: 1.6rem 3.2rem;
+  margin: 0.5rem 0;
+  transition: all 0.4s;
+}
+.btn:hover {
+  background-color: rgba(174, 118, 135, 0.897);
+}
+
+#section-a {
+  background-color: rgb(255, 243, 245);
+  color: rgb(144, 102, 115);
+  padding: 3.2rem 0;
+}
+
+#section-b {
+  padding: 2rem;
+}
+
+#section-b ul {
+  list-style: none;
+}
+
+#section-b li {
+  background: rgb(255, 243, 245);
+  color: rgb(144, 102, 115);
+  margin-bottom: 1.5rem;
+}
+
+.col-content {
+  padding: 1.5rem;
+}
+
+#section-c {
+  background: rgb(255, 243, 245);
+  color: rgb(144, 102, 115);
+  padding: 5rem;
+}
+
+#section-d .box {
+  padding: 5rem;
+}
+
+#section-d .box:first-child {
+  background-color: rgb(199, 139, 158);
+}
+
+footer {
+  padding: 4rem;
+  background: gray;
+}
+footer a {
+  color: pink;
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 11px;
+  }
+
+  #section-b li {
+    width: 28%;
+    margin: 1%;
+    display: inline-block;
+  }
+  .box {
+    width: 50%;
+    float: left;
+  }
+}
